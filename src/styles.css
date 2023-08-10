@@ -81,6 +81,15 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+.footer {
+  bottom: 0;
+  position: fixed;
+  color: #E3DBDB;
+  width: 100%;
+  font-size: 0.75em;
+  text-align: center;
+}
+
 .list {
   margin: 0;
   padding: 0;
