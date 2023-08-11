@@ -16,6 +16,7 @@ export function NewTodoForm({ onSubmit }) {
         <h1 htmlFor="item" style={{fontSize: "2em", textAlign:"center"}}>What do you want to accomplish?</h1>
         <hr class="divider"/>
         <input
+          style={{height:"30px"}}
           value={newItem}
           onChange={e => setNewItem(e.target.value)}
           type="text"
