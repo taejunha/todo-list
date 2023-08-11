@@ -25,6 +25,7 @@ export function NewTodoForm({ onSubmit }) {
         />
       </div>
       <button className="btn">Add Task</button>
+      <hr class="divider"/>
     </form>
   )
 }
