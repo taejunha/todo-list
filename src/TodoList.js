@@ -1,6 +1,6 @@
 import { TodoItem } from "./TodoItem"
 
-export function TodoList({ todos, toggleTodo, deleteTodo }) {
+export function TodoList({ todos, toggleTodo, deleteTodo, onDragStart, onDragOver, onDrop }) {
   return (
     <ul className="list">
       {todos.length === 0 && "You have finished everything"}
@@ -11,6 +11,9 @@ export function TodoList({ todos, toggleTodo, deleteTodo }) {
             key={todo.id}
             toggleTodo={toggleTodo}
             deleteTodo={deleteTodo}
+            onDragStart={onDragStart}
+            onDragOver={onDragOver}
+            onDrop={onDrop}
           />
         )
       })}
